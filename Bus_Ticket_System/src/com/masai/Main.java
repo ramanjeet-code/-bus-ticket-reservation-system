@@ -182,7 +182,7 @@ public class Main {
 
 	public static void adminLogin(Scanner sc) throws InvalidDetailsException {
 
-		System.out.println("Enter the user name");
+		System.out.println("Enter the User Name");
 		String userName = sc.next();
 		System.out.println("Enter the password");
 		String password = sc.next();
