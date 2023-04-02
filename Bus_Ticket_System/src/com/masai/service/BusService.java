@@ -13,6 +13,8 @@ public interface BusService {
 
 	public void deleteBus (int id, Map<Integer, Bus> products) throws BusException;
 
-	public String updateBus (int id, Bus prod, Map<Integer, Bus> products) throws BusException;
+
+
+public	String updateBus(int id, String name, int totalSeat, String busType, Map<Integer, Bus> buslist) throws BusException;
 
 }

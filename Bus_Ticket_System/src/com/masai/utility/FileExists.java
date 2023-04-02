@@ -11,6 +11,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.masai.entities.Bus;
+import com.masai.entities.Passenger;
+import com.masai.entities.User;
 
 public class FileExists {
 
@@ -50,5 +52,42 @@ public class FileExists {
 		}
 		return pFile;
 	}
+	public static Map<String, Passenger> customerFile() {
+
+		Map<String, Passenger> cFile = null;
+
+		File f = new File("Customer.ser");
+		boolean flag = false;
+		try {
+			if (!f.exists()) {
+				f.createNewFile();
+				flag = true;
+			}
+
+			if (flag) {
+				
+				cFile = new LinkedHashMap<>();
+				ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(f));
+				oos.writeObject(cFile);
+				return cFile;
+
+			} else {
+				
+				ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f));
+				cFile = (Map<String, Passenger>) ois.readObject();
+
+				return cFile;
+
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+
+			System.out.println(e.getMessage());
+		}
+		return cFile;
+
+	}
+
 
 }

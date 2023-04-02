@@ -8,6 +8,7 @@ import com.masai.exceptions.BusException;
 
 
 
+
 public class BusServiceEmpl implements BusService {
 
 	public BusServiceEmpl() {
@@ -58,9 +59,28 @@ public class BusServiceEmpl implements BusService {
 	}
 
 	@Override
-	public String updateBus(int id, Bus prod, Map<Integer, Bus> products) throws BusException {
-		// TODO Auto-generated method stub
-		return null;
+	public String updateBus(int id,String name,int totalSeat,String busType, Map<Integer, Bus> buslist) throws BusException {
+
+		if (buslist.isEmpty()) {
+	        throw new BusException("Bus List is empty. Please add buses first!");
+	    }
+	    if (!buslist.containsKey(id)) {
+	        throw new BusException("Bus with ID " + id + " not found!");
+	    }
+	    Bus bus = buslist.get(id);
+	    Bus update=new Bus(id,name,totalSeat,bus.getSource(),bus.getDestination(),busType,bus.getDepartureTime(),bus.getArrivalTime(),bus.getBusNumber());
+			if (buslist.containsKey(id)) {
+				buslist.put(id, update);
+				return "Bus has successfully updated";
+			} else {
+				throw new BusException("Bus not found");
+			}
+
 	}
+		
+
+	
+		
+	
 
 }
