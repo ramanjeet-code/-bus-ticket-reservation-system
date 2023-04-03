@@ -34,7 +34,7 @@ Passenger and Administrator. Users can book/reserve their tickets one day before
 - View bookings by BusName
 
 - View bookings by userName of Passenger
-```
+
 
 ### The roles of the Passenger are:
 
@@ -48,8 +48,6 @@ View bookings for a date range.
 View bookings by busName.
 
 View bookings by userName of Passenger.
-
-
 
 
 Installation
