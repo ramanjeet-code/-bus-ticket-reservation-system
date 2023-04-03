@@ -42,33 +42,25 @@ Passenger and Administrator. Users can book/reserve their tickets one day before
 
 ### The roles of the Passenger are:
 
-Bus Ticket Reservation System
-The Bus Ticket Reservation System is a project that aims to cater to the needs of passengers who are traveling from one point to another. It contains essential modules like Passenger and Administrator. Users can book/reserve their tickets one day before.
 
-Users of this application
-Administrator
-Passenger
-Administrator roles and functionalities
-The administrator is responsible for the following roles and functionalities:
 
 Login
-Add a bus with details such as busName, source, destination, busType, departureTime, arrivalTime, and totalSeats.
+
 Update bus details such as busName, busType, and totalSeats.
+
 Delete bus details.
+
 View all bookings.
+
 View bookings for a date range.
+
 View bookings by busName.
+
 View bookings by userName of Passenger.
-Note: The username and password for the administrator are fixed (e.g., username: 'admin' and password: 'admin'). Please do not store username and password in any file for the administrator.
 
-Passenger roles and functionalities
-The passenger is responsible for the following roles and functionalities:
 
-Register/Login
-Search for available buses based on source and destination.
-Select a bus and reserve seats.
-Cancel reservations.
-View ticket details.
+
+
 Installation
 To install and run the Bus Ticket Reservation System, follow these steps:
 
@@ -83,5 +75,5 @@ Fork the repository.
 Create a new branch for your changes.
 Make changes and test them thoroughly.
 Submit a pull request.
-License
-The project is licensed under the MIT License.
+
+
