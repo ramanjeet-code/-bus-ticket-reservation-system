@@ -19,10 +19,6 @@ Passenger and Administrator. Users can book/reserve their tickets one day before
 
 ### The roles of the Administrator are:
 
-**Note:** Keep the username and password fixed for admin (like username: ‘admin’ password: ‘admin’),do not store username and password in any file for admin
-
-```java
-- Login
 
 - Add the bus with details busName, source, destination, busType, departureTime, 
   arrivalTime, and totalSeats.
@@ -44,11 +40,6 @@ Passenger and Administrator. Users can book/reserve their tickets one day before
 
 
 
-Login
-
-Update bus details such as busName, busType, and totalSeats.
-
-Delete bus details.
 
 View all bookings.
 
